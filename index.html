@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body class="bg-light">
     <div class="header text-center mt-4">
-    <h2>Random Quoute And Name</h2>
-  </div>
+        <h2>Random Quoute And Name</h2>
+    </div>
+    <div class="container">
+        <form id="quoteForm" class="w-50 mx-auto mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">আপনার নাম লিখুন</label>
+                <input type="text" class="form-control" id="name" placeholder="নাম লিখুন..." lang="bn" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">নতুন কোট দেখান</button>
+        </form>
+
+        <div id="cardContainer" class="row mt-5"></div>
+    </div>
+
+    <script src="./script/main.js"></script>
 </body>
+
 </html>
